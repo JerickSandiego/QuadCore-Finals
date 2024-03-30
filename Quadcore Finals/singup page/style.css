@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("images/pokemon\ 1.png");
+    background-clip:content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#trainer{
+    color: #FF1414;
+}
+#registrationForm {
+    width: 90%;
+    max-width: 350px;
+    height: 600px;
+    max-height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#registrationForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color:   #FF1414;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.text{
+    height: 10xp;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;}
+
+.alternative{
+    height: 70px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+  
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    display: flex;
+
+}
+.socials{
+    margin: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    #registrationForm {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,294 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 240vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar img{
+  margin: 0;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+ 
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #FF1414;
+  padding: 10px 0;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar .links a:hover {
+  color:#FF1414;
+  text-decoration: underline;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: #FF1414;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+  color: black;
+}
+
+.navbar .buttons .signin:hover {
+  color: #FF1414;
+}
+
+.navbar .buttons .signup {
+  border: 1px solid #FF1414;;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons .signup:hover {
+  background-color: #FF1414;
+  color: #fff;
+}
+.text{
+  color: #FF1414;
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero-section .hero {
+  max-width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero video{
+  width: 80%;
+  
+}
+
+
+
+
+
+
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
+}
+
+.news-section{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 80%;
+  align-items: center;
+  background-color: white;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 50px;
+}
+.news-section .mainfeed{
+
+  width: 500px;
+  display: flex;
+  border-radius: 25px;
+  flex-direction: column;
+  height: 600px;
+}
+.mainfeed img{
+  width: 100%;
+}
+
+.mainfeed .description{
+  height:100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 15px;
+  background-color: #FF1414;
+}
+
+.description h1{
+  color: white;
+}
+
+.description p{
+  color: white;
+}
+
+
+
+.news-section .subfeed{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 600px;
+}
+
+.news-section .subfeed .news2{
+
+  border-radius: 25px;
+  width: 100%;
+  height: 275px
+}
+
+.news-section .subfeed .news3{
+ 
+  border-radius: 25px;
+  width: 100%;
+  height: 275px
+}
+
+.subfeed .news2 .description{
+  height:40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 15px;
+  background-color: #FF1414;
+}
+
+.subfeed .news2 img{
+  width: 100%;
+}
+
+.subfeed .news3 .description{
+  height:40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 15px;
+  background-color: #FF1414;
+}
+
+.subfeed .news3 img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: white;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+  body{
+    height: 220vh;
+  }
+
+  .news-section{
+    max-width: 100%;
+    padding: 0;
+    height: 120vh;
+  
+  }
+  .news-section .mainfeed{
+    display: none;
+    
+  }
+  .news-section .subfeed{
+    height: 100vh;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .news-section .subfeed .news2{
+    height: 45vh;
+    width: 100%;
+  }
+  .news-section .subfeed .news3{
+    height: 45vh;
+    width: 100%;
+  }
+}
